@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-love nature</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
+      <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'DM Sans', sans-serif;
+      }
+    li,
+    a {
+      float: right;
+      display: inline;
+      text-decoration: none;
+      margin: 15px;
+      font-size: medium;
+    }
+
+    .header {
+      background-image: url(img/header-hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: black;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      filter: brightness(40%);
+      filter: contrast(50%);
+      opacity: 0.2;
+    }
+
+    #logo {
+      margin-left: 150px;
+      margin-top: 20px;
+      max-height: 60px;
+      max-width: 60px;
+    }
+
+    .header-content {
+      text-align: center;
+      padding: 150px 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 50px;
+      margin-top: -50px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 150px;
+      margin-top: -30px;
+
+    }
+
+    a {
+      color: #fff;
+      font-size: medium;
+    }
+
+    h3 {
+      color: #fff;
+    }
+
+    .button1 {
+      background-color: rgb(223, 205, 0);
+      color: black;
+      font-size: 15px;
+      position: relative;
+      padding: 12px 36px;
+      border-radius: 4px;
+      border: none;
+      margin: 35px;
+      margin-bottom: -12px;
+    }
+    .button2{
+      background-color: white;
+      color: black;
+      font-size: 15px;
+      position: relative;
+      padding: 12px 36px;
+      border-radius: 4px;
+      border-style: outset;
+      margin: 35px;
+      margin-bottom: -12px;
+    }
+
+    .oop {
+      max-width: 88%;
+      margin: 90px auto;
+    }
+
+    .oop::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .gallery {
+     float: left;
+     width: 31.68%;
+     margin: 0 10px;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: 500px;
+      margin-top: 40px;
+    }
+
+    div.desc {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .about {
+      color: black;
+      font-size:20px;
+      text-align: left;
+      opacity: 0.6;
+    }
+
+    .about1 {
+      color: black;
+      font-size:16px;
+      padding-top: 70px;
+      text-align: left;
+      opacity: 0.6;
+    }
+    #line{
+      color: rgb(243, 225, 66);
+      font-size: 40px;
+      text-align: center;
+      letter-spacing: -3px;
+
+    }
+    .layout4{
+      background-color:#eef5e883;
+      color:  rgb(83, 105, 66);
+      font-size: 35px;
+      line-height: 42px;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: -2;
+      box-sizing: border-box;
+    }
+    .aboutus{
+    width: 50%;
+    float: left;
+   
+    }
+    .about2{
+      margin: 30px 40px 100px 250px;  
+    }
+    #button1{
+      float: left;
+    }
+    #button1:hover{
+      color: rgb(152, 175, 132);
+      
+    }
+    .footer{
+      background-image: url(img/footer-hero-big.jpg);
+      position:unset;
+      padding-top: 550px;
+      margin-top: 650px;
+      background-size: cover;
+    }
+    #para1{
+      font-size: 20px;
+      color: #536942;
+      text-align: center;
+      margin-top: 30px;
+      padding: 0px 530px 0px 530px;
+      line-height: 30px;
+    }
+    #button3{
+      margin-right: 610px;
+    }
+    .bottom a{
+      color: #536942;
+      margin: -20px;
+      padding: 45px 30px 0px 0px;
+
+    }
+    .bottom ul{
+      float: left;
+      padding: 0px 0px 0px 150px;
+    }
+    #logo1{
+      margin-left: 200px;
+      padding: 20px 20px 20px 20px;
+      height: 100px;
+      width: 100px;
+    }
+    .bottom p{
+      margin-left: 1010px;
+      margin-top: -65px;
+      color: #536942;
+      font-size: 16px;
+    }
+    #bu1{
+      padding:10px 20px 10px 20px;
+      margin-top: 6px;
+      border: solid;
+      border-radius: 4px;
+      border-bottom-width: 1px;
+      border-top-width: 1px;
+      border-left-width: 1px;
+      border-right-width: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+      <ul>
+        <img id="logo" src="img/logo-white.svg" alt="">
+        <li><a id="bu1" href="index.html"> 202-555-0188</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Services.html">Servises</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-content">
+      <H2>we all love</H2>
+      <h1>nature</h1>
+      <h3>Look deep into nature, and you will</h3>
+      <h3>understand everything better.</h3>
+      <button class="button1">Get started</button>
+    </div>
+  </div>
+  <h1 style="color: #536942; font-size: 50px; margin-top: 100px;">Our Services</h1>
+  <h1 id="line">_____</h1>
+
+  <div class="oop">
+    <div class="gallery">
+      
+        <img src="img/service-1.jpg" alt="Cinque Terre" width="370" height="500">
+   
+      <div class="desc">
+        <h1 class="about">Web Design</h1>
+        <h2 class="about1">Focus on how you can help and benefit your user. Use simple words so that you don't confuse
+          people.</h2>
+      </div>
+    </div>
+
+    <div class="gallery">
+        <img src="img/service-2.jpg" alt="" width="370" height="500">
+      <div class="desc">
+        <h1 class="about">Graphic Design</h1>
+        <h2 class="about1">Focus on how you can help and benefit your user. Use simple words so that you don't confuse
+          people.</h2>
+      </div>
+    </div>
+
+    <div class="gallery">
+        <img src="img/service-3.jpg" alt="" width="370" height="500">
+      <div class="desc">
+        <h1 class="about">Content Creation</h1>
+        <h2 class="about1">Focus on how you can help and benefit your user. Use simple words so that you don't confuse
+          people.</h2>
+      </div>
+    </div>
+  </div>
+  <div class="layout3">
+  <div class="layout4">
+    <img src="img/quotes.svg" alt="" style="opacity: 0.4;max-width: 37px;margin-top: 80px;">
+    <h4 style="margin: 50px 400px;">“Original and with an innate understanding of their customer’s needs, the team at Love Nature are always a pleasure to work with.”</h4>
+    <img src="img/avatar_on_home.png" alt="" style="height: 50px;width: 50px;">
+    <h6 style="opacity: 0.4;font-size: 14px;padding-bottom: 60px;">jane miller</h6>
+  </div>
+</div>
+
+<div class="about2">
+<div class="aboutus">
+  <p style="font-size: 12px;padding: 0px 200px 20px 0px;">ABOUT US</p>
+  <h4 style="font-size: 35px; padding: 20px 200px 20px 0px;">Tell website visitors who you are and why they should choose your business.</h4>
+  <p style="font-size: 16px;padding: 20px 200px 20px 0px;">Because when a visitor first lands on your website, you’re a stranger to them. They have to get to know you in order to want to read your blog posts, subscribe to your email newsletter, or buy what you’re selling.</p>
+  <a id="button1" href="index.html" class="button2" style="margin-left: -10px;">find out more</a>
+</div>
+<div class="aboutus">
+  <img src="img/leaf.jpg" alt="" style="height: 500px; width: 470;">
+</div>
+</div>
+<div class="footer">
+  <div class="question">
+<h1 style="margin-top: -390px;font-size: 60px;color: #536942;">QUESTIONS?</h1>
+<p id="para1">Whether you’re curious about features, a free trial, or even press, we’re here to answer any questions.</p>
+<a id="button3" href="index.html" class="button1">Let' Talk now</a>
+</div>
+</div><footer>
+<div class="bottom">
+  <ul>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Servises</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Home</a></li>
+  </ul>
+  <img id="logo1" src="img/logo-green.svg" alt="">
+  <p>Love Nature by Tyler Moore</p>
+</div>
+</footer>
+</body>
+
+</html>
